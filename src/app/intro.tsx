@@ -20,10 +20,10 @@ export default function Intro() {
               </div>
               <div className="md:mt-2 md:w-3/5 ">
                 <h1 className="text-4xl font-mono tracking-wider">
-                    Hi,I'm <strong>Michelle. </strong>
+                    Hi, I&apos;m <strong>Michelle. </strong>
                 </h1>
                 <p className="text-lg mt-4 mb-6 md:text-2xl ">
-                  <span>I'm a</span>
+                  <span>I&apos;m a</span>
                   <span className="font-semibold text-teal-600 dark:text-yellow-500">
                     &nbsp;Full Stack Web Developer&nbsp;
                   </span>
