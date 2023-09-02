@@ -1,13 +1,7 @@
 "use client"
 import "./globals.css";
-import type { Metadata } from "next";
 import Header from "./header";
 import { ThemeProvider } from "next-themes"
-
-export const metadata: Metadata = {
-  title: "Michelle Santiago",
-  description: "Portfolio",
-};
 
 export default function RootLayout({
   children,
