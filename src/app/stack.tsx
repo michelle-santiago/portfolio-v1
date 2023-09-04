@@ -13,9 +13,9 @@ export default function Stack() {
       <div className="sm:px-8 bg-teal-500 dark:bg-gray-950">
         <div className="mx-auto w-full max-w-7xl lg:px-8">
           <h2 className="text-white text-3xl">Tech Stack</h2>
-          <div className="mt-4 p-5 grid md:grid-cols-2 lg:grid-cols-2 gap-4 rounded-lg border">
+          <div className="mt-4 p-5 grid md:grid-cols-2 lg:grid-cols-2 gap-4 rounded-lg bg-white dark:bg-stone-900">
             <div className="flex flex-col gap-2 p-4 rounded-lg border">
-              <h3 className="text-white text-xl">FrontEnd</h3>
+              <h3 className="text-xl">FrontEnd</h3>
               <div className="flex flex-wrap gap-4 pt-6">
                 <Button variant={"transparent"}>
                   <TiHtml5 size="40"/>
@@ -39,7 +39,7 @@ export default function Stack() {
               </div>
             </div>
             <div className="flex flex-col gap-2 p-4 rounded-lg border">
-              <h3 className="text-white text-xl">BackEnd</h3>
+              <h3 className=" text-xl">BackEnd</h3>
               <div className="flex flex-wrap gap-4 pt-6">
                 <Button variant={"transparent"}>
                   <DiRuby size="40"/>
@@ -59,7 +59,7 @@ export default function Stack() {
               </div>
             </div>
             <div className="flex flex-col gap-2 p-4 rounded-lg border">
-              <h3 className="text-white text-xl">Tools</h3>
+              <h3 className="text-xl">Tools</h3>
               <div className="flex flex-wrap gap-4 pt-6">
                 <Button variant={"transparent"}>
                   <FaGitSquare size="40"/>
