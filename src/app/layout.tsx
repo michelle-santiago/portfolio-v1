@@ -22,6 +22,7 @@ export default function RootLayout({
                   </div>
                 </div>
               </main>
+           
             </div>
           </div>
         </ThemeProvider>

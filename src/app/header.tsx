@@ -8,7 +8,6 @@ export default function Header() {
   const currentTheme = theme === "system" ? systemTheme : theme
   return (
     <header className="pointer-events-none relative z-50 flex flex-none flex-col">
-      <div className="order-last mt-16"></div>
       <div className="top-0 z-10 h-16 pt-6">
         <div className="sm:px-8 w-full">
           <div className="mx-auto w-full max-w-7xl lg:px-8">

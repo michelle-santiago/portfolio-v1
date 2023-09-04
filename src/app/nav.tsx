@@ -8,7 +8,7 @@ export default function Nav(){
   return (
     <>
       <div className="flex flex-1 justify-end md:justify-center">
-        <nav className="pointer-events-auto hidden md:block">
+        <nav className="hidden md:block">
           <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
             <li>
               <Link href="/" className="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-yellow-500">
@@ -34,39 +34,39 @@ export default function Nav(){
         </nav>
       </div>
 
-      <div className="pointer-events-auto md:hidden">
-          <Sheet>
-            <SheetTrigger><TbCircleLetterM size={40}/></SheetTrigger>
-            <SheetContent>
-              <SheetHeader>
-                <SheetTitle>Michelle Santiago</SheetTitle>
-                <SheetDescription>
-                  <ul className="flex flex-col bg-white/90 text-sm font-medium text-zinc-800 text-left shadow-zinc-800/5  backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
-                    <li>
-                      <Link href="/" className="block px-3 py-2 transition hover:text-teal-500 dark:hover:text-yellow-500">
-                        Home
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/about" className="r block px-3 py-2 transition hover:text-teal-500 dark:hover:text-yellow-500">
-                        About
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/projects" className="block px-3 py-2 transition hover:text-teal-500 dark:hover:text-yellow-500">
-                        Projects
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/contact" className="block px-3 py-3 transition hover:text-teal-500 dark:hover:text-yellow-500">
-                        Contacts
-                      </Link>
-                    </li>
-                  </ul>
-                </SheetDescription>
-              </SheetHeader>
-            </SheetContent>
-          </Sheet>
+      <div className="md:hidden">
+        <Sheet>
+          <SheetTrigger><TbCircleLetterM size={40}/></SheetTrigger>
+          <SheetContent>
+            <SheetHeader>
+              <SheetTitle>Michelle Santiago</SheetTitle>
+              <SheetDescription>
+                <ul className="flex flex-col bg-white/90 text-sm font-medium text-zinc-800 text-left shadow-zinc-800/5  backdrop-blur dark:bg-zinc-950 dark:text-zinc-200 dark:ring-white/10">
+                  <li>
+                    <Link href="/" className="block px-3 py-2 transition hover:text-teal-500 dark:hover:text-yellow-500">
+                      Home
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/about" className="r block px-3 py-2 transition hover:text-teal-500 dark:hover:text-yellow-500">
+                      About
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/projects" className="block px-3 py-2 transition hover:text-teal-500 dark:hover:text-yellow-500">
+                      Projects
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/contact" className="block px-3 py-3 transition hover:text-teal-500 dark:hover:text-yellow-500">
+                      Contacts
+                    </Link>
+                  </li>
+                </ul>
+              </SheetDescription>
+            </SheetHeader>
+          </SheetContent>
+        </Sheet>
       </div>
    </>
   )
