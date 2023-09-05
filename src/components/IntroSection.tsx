@@ -33,7 +33,7 @@ export default function Intro() {
                 based in Philippines. Navigating the vast web development sea, one website at a time.
               </p>
               <Button>
-                <Link href="/projects">
+                <Link href="#projects">
                   Projects
                 </Link>
               </Button>
