@@ -8,11 +8,16 @@ import { FiExternalLink }  from "react-icons/fi"
 import { FaImages }  from "react-icons/fa"
 import Link from "next/link"
 import Image from "next/image"
+import Bubbles from "./ui/bubbles"
+import Fish from "./ui/fish"
 
 export default function Projects() {
   return (
-   <section id="projects" className="pt-4">
-      <h2 className="text-white text-3xl md:text-3xl lg:text-3xl py-4">Projects</h2>
+   <section id="projects" className="pt-4 px-2 md:px-24">
+      <div className="flex gap-5">
+        <Bubbles/>
+        <h2 className="text-white text-2xl md:text-3xl lg:text-3xl py-4">Projects</h2>
+      </div>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
         { projects.map((project, idx) => {
             return (
@@ -52,6 +57,11 @@ export default function Projects() {
               </div> 
             )})}
       </div>   
+      <div className="relative">
+        <div className="absolute inset-y-0 left-14">
+          <Fish/>
+        </div>
+      </div>
    </section>
   )
 }

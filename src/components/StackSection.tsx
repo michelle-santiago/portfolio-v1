@@ -1,75 +1,135 @@
 import { TiHtml5 } from "react-icons/ti"
 import { DiRuby } from "react-icons/di"
-import { SiRubyonrails, SiTailwindcss, SiPostman, SiMysql, SiAxios, SiVercel, SiRender} from "react-icons/si"
+import { SiRubyonrails, SiTypescript, SiTailwindcss, SiPostman, SiMysql, SiAxios, SiVercel, SiRender} from "react-icons/si"
 import { BiLogoJavascript, BiLogoReact, BiLogoPostgresql } from "react-icons/bi"
-import { BsFiletypeCss} from "react-icons/bs"
-import { FaGitSquare} from "react-icons/fa"
-import { Button } from "@/components/ui/button"
+import { FaGitSquare, FaDocker, FaCss3} from "react-icons/fa"
+import { TbBrandNextjs } from "react-icons/tb"
+import { GoRuby } from "react-icons/go"
+import { GrMysql } from "react-icons/gr"
 import { Separator } from "@/components/ui/separator"
+import * as React from "react"
+import { Card, CardContent } from "@/components/ui/card"
+import Bubbles from "./ui/bubbles"
 
 export default function Stack() {
+  
   return (
-    <section id="stack" className="py-5">
-      <h2 className="text-white text-3xl md:text-3xl lg:text-3xl py-4">Tech Stack</h2>
+    <section id="stack" className="py-5 px-2 md:px-24 ">
+      <div className="flex gap-5">
+        <Bubbles/>
+        <h2 className="text-white text-2xl md:text-3xl lg:text-3xl py-4">Tech Stack & Tools</h2>
+      </div>
       <Separator/>
-      <div className="flex flex-wrap gap-4 pt-6">
-        <Button variant="transparent">
-          <TiHtml5 size="40"/>
-          <span className="px-2">HTML</span>
-        </Button>
-        <Button variant="transparent">
-          <BiLogoJavascript size="40"/>
-          <span className="px-2">Javascript</span>
-        </Button>
-        <Button variant="transparent">
-          <BsFiletypeCss size="40"/>
-        </Button>
-        <Button variant="transparent">
-          <SiTailwindcss size="40"/>
-          <span className="px-2">TailwindCSS</span>
-        </Button>
-        <Button variant="transparent">
-          <BiLogoReact size="40"/>
-          <span className="px-2">ReactJS</span>
-        </Button>
-        <Button variant="transparent">
-          <DiRuby size="40"/>
-          <span className="px-2">Ruby</span>
-        </Button>
-        <Button variant="transparent">
-          <SiRubyonrails size="40"/>
-          <span className="px-2">Ruby on Rails</span>
-        </Button>
-        <Button variant="transparent">
-          <BiLogoPostgresql size="40"/>
-          <span className="px-2">Postgresql</span>
-        </Button>
-        <Button variant="transparent">
-          <SiMysql size="40"/>
-        </Button>
-        <Button variant="transparent">
-          <FaGitSquare size="40"/>
-          <span className="px-2">Git</span>
-        </Button>
-        <Button variant="transparent">
-          <SiAxios size="40"/>
-          <span className="px-2">Axios</span>
-        </Button>
-        <Button variant="transparent">
-          <span className="px-2">Rspec</span>
-        </Button>
-        <Button variant="transparent">
-          <SiVercel size="40"/>
-          <span className="px-2">Vecel</span>
-        </Button>
-        <Button variant="transparent">
-          <SiRender size="40"/>
-          <span className="px-2">Render</span>
-        </Button>
-        <Button variant="transparent">
-          <SiPostman size="40"/>
-          <span className="px-2">Postman</span>
-        </Button>
+      <div className="flex flex-wrap justify-center gap-2 w-50 pt-6">
+        <Card>
+          <CardContent className="flex flex-col md:flex-row items-center gap-2 p-3 md:px-6">
+            <TiHtml5 size="40"/>
+            <span className="font-semibold">HTML</span>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent className="flex flex-col md:flex-row items-center gap-2 p-3 md:px-6">
+            <BiLogoJavascript size="40"/>
+            <span className="font-semibold">JavaScript</span>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent className="flex flex-col md:flex-row items-center gap-2 p-3 md:px-6">
+            <SiTypescript size="40"/>
+            <span className="font-semibold">TypeScript</span>
+          </CardContent>
+        </Card>   
+        <Card>
+          <CardContent className="flex flex-col md:flex-row items-center gap-2 p-3 md:px-6">
+            <FaCss3 size="40"/>  
+            <span className="font-semibold">CSS</span>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent className="flex flex-col md:flex-row items-center gap-2 p-3 md:px-6">
+            <SiTailwindcss size="40"/>
+            <span className="font-semibold">TailwindCSS</span>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent className="flex flex-col md:flex-row items-center gap-2 p-3 md:px-6">
+            <BiLogoReact size="40"/>
+            <span className="font-semibold">ReactJS</span>
+          </CardContent>
+        </Card>  
+        <Card>
+          <CardContent className="flex flex-col md:flex-row items-center gap-2 p-3 md:px-6">
+            <TbBrandNextjs size="40"/>
+            <span className="font-semibold">NextJS</span>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent className="flex flex-col md:flex-row items-center gap-2  p-3 md:px-6">
+            <DiRuby size="40"/>
+            <span className="font-semibold">Ruby</span>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent className="flex flex-col md:flex-row items-center gap-2 p-3 md:px-6">
+             <SiRubyonrails size="40"/>
+             <span className="font-semibold">Ruby on Rails</span>
+          </CardContent>
+        </Card>  
+        <Card>
+          <CardContent className="flex flex-col md:flex-row items-center gap-2 p-3 md:px-6">
+            <BiLogoPostgresql size="40"/>
+            <span className="font-semibold">PostgreSQL</span>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent className="flex flex-col md:flex-row items-center gap-2 p-3 md:px-6">
+            <GrMysql size="40"/>
+            <span className="font-semibold">MySQL</span>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent className="flex flex-col md:flex-row items-center gap-2 p-3 md:px-6">
+            <FaDocker size="40"/>
+            <span className="font-semibold">Docker</span>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent className="flex flex-col md:flex-row items-center gap-2 p-3 md:px-6">
+            <FaGitSquare size="40"/>
+            <span className="font-semibold">Git</span>
+          </CardContent>
+        </Card>     
+        
+        <Card>
+          <CardContent className="flex flex-col md:flex-row items-center gap-2 p-3 md:px-6">
+            <SiAxios size="40"/>
+            <span className="font-semibold">Axios</span>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent className="flex flex-col md:flex-row items-center gap-2 p-3 md:px-6">
+            <GoRuby size="40"/>
+            <span className="font-semibold">RSpec</span>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent className="flex flex-col md:flex-row items-center gap-2 p-3 md:px-6">
+            <SiVercel size="40"/>
+            <span className="font-semibold">Vercel</span>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent className="flex flex-col md:flex-row items-center gap-2 p-3 md:px-6">
+            <SiRender size="40"/>
+            <span className="font-semibold">Render</span>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent className="flex flex-col md:flex-row items-center gap-2 p-3 md:px-6">
+            <SiPostman size="40"/>
+            <span className="font-semibold">Postman</span>
+          </CardContent>
+        </Card>
       </div>
     </section>
   )

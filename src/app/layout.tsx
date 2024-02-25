@@ -1,7 +1,7 @@
 "use client"
 import "./globals.css";
-import Header from "./header";
 import Footer from "./footer";
+import Nav from "./nav"
 import { ThemeProvider } from "next-themes"
 
 export default function RootLayout({
@@ -11,11 +11,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="dark:bg-stone-900">
+      <body className="dark:bg-stone-900 ">
         <ThemeProvider enableSystem={true} attribute="class">
-          <div className="flex w-full">
-            <div className="relative flex w-full flex-col">
-              <Header/>
+          <div id="top" className="flex">
+            <div className="fixed z-10">
+              <Nav/> 
+            </div>
+            <div className="relative w-full flex flex-col">
               <main className="flex-auto">
                 { children }
               </main>

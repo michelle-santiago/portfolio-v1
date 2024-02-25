@@ -8,8 +8,8 @@ import { FaGithubAlt } from 'react-icons/fa'
 
 export default function Intro() {
   return (
-    <section id="home">
-      <div className="sm:px-8 mt-9">
+    <section id="home" className="px-2 md:px-24">
+      <div className="sm:px-8 mt-16">
         <div className="mx-auto w-full max-w-7xl lg:px-8">
           <div className="flex flex-col text-center items-center justify-center md:flex-row md:space-x-4 md:text-left">
             <div className="m-5">
@@ -18,6 +18,7 @@ export default function Intro() {
                 alt=""
                 width={200}
                 height={200}
+                priority={true} 
                 className="rounded-full bg-teal-600 dark:bg-yellow-500"
               />
             </div>
@@ -28,9 +29,9 @@ export default function Intro() {
               <p className="text-lg mt-4 mb-6 md:text-2xl">
                 <span>I&apos;m a</span>
                 <span className="font-semibold text-teal-600 dark:text-yellow-500">
-                  &nbsp;Full Stack Web Developer&nbsp;
+                  &nbsp;Full Stack Developer&nbsp;
                 </span>
-                based in Philippines. Navigating the vast web development sea, one website at a time.
+                based in the Philippines, steadily navigating the software engineering sea.
               </p>
               <Button>
                 <Link href="#projects">
