@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
-    <footer className="p-5">
-      <div className="flex flex-row items-center justify-center space-x-1 text-lg text-neutral-500 dark:text-neutral-100">
-        © 2023 Michelle Santiago<a href="/" className="hover:underline"></a>
+    <footer className="bg-teal-800 dark:bg-stone-950 p-5">
+      <div className="flex flex-row items-center justify-center space-x-1 text-stone-50 text-lg">
+        © 2024 Michelle Santiago
       </div>
     </footer>
   )
