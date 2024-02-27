@@ -8,7 +8,7 @@ import { FaGithubAlt } from 'react-icons/fa'
 
 export default function Intro() {
   return (
-    <section id="home" className="px-2 md:px-24">
+    <section id="intro" className="px-2 md:px-24">
       <div className="sm:px-8 mt-16">
         <div className="mx-auto w-full max-w-7xl lg:px-8">
           <div className="flex flex-col text-center items-center justify-center md:flex-row md:space-x-4 md:text-left">
