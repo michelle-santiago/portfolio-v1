@@ -11,9 +11,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="dark:bg-stone-900 ">
+      <body id="top" className="dark:bg-stone-900 ">
         <ThemeProvider enableSystem={true} attribute="class">
-          <div id="top" className="flex">
+          <div className="flex">
             <div className="fixed z-10">
               <Nav/> 
             </div>
